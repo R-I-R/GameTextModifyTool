@@ -1,6 +1,6 @@
 # GameTextModifyTool
 
-En este git hay diferentes herramientas que pueden ayudar al momento de traducir un texto
+En este git hay diferentes herramientas que pueden ayudar al momento de traducir un juego o novela visual
 
 TextExtractor: En resumen este extractor identifica los caracteres que señalan el inicio del dialogo en un juego para luego
 proceder a extraerlo en un archivo, de esta forma el usuario obtendra un archivo solamente con el texto para
