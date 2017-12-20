@@ -28,8 +28,8 @@ int main(){
 	printf("Bien, Empecemos.\n\n");
 	
 	ifstream archivo;
-	ofstream frases;
-	frases.open("frases.txt",ios::out);
+	//ofstream frases;
+	//frases.open("frases.txt",ios::out);
 	vector<ss> palabras;
 	palabras.assign(archivos,ss());
 	
@@ -47,7 +47,7 @@ int main(){
 			past = st;
 			palabra++;
 		}
-		frases << palabras[a].first << endl << palabras[a].second << endl << endl;
+		//frases << palabras[a].first << endl << palabras[a].second << endl << endl;
 		archivo.close();
 	}
 	
