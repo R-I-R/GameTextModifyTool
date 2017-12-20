@@ -11,8 +11,8 @@ en el proceso tambien se encarga de quitar los tildes para evitar errores en pan
 using namespace std;
 
 int main(){
-	char especiales[14] = {'á','é','í','ó','ú','Á','É','Í','Ó','Ú','ñ','Ñ','ü','Ü'};
-	char normales[14] = {'a','e','i','o','u','A','E','I','O','U','n','N','u','U'};
+	char especiales[16] = {'á','é','í','ó','ú','Á','É','Í','Ó','Ú','ñ','Ñ','ü','Ü','¿','¡'};
+	char normales[16] = {'a','e','i','o','u','A','E','I','O','U','n','N','u','U',' ',' '};
 	char ar[300];
 	
 	char inicio;
@@ -81,7 +81,7 @@ int main(){
 		if(s[0] == inicio){
 			getline(archivo,st);
 			for(int a = 0; a < st.size(); a++){
-				for(int b = 0; b < 14; b++){
+				for(int b = 0; b < 16; b++){
 					if(st[a] == especiales[b]){
 						st[a] = normales[b];
 						break;
@@ -96,8 +96,8 @@ int main(){
 		}
 		lineas++;
 		
-		if(dividir) printf("\r lineas leidas: %d	Dialogos sobreescritos: %d		Partes leidas: %d",lineas,dialogos,partes);
-		else printf("\r lineas leidas: %d	Dialogos sobreescritos: %d",lineas,dialogos);
+		if(dividir) printf("\r lineas leidas: %d		Dialogos sobreescritos: %d		Partes leidas: %d",lineas,dialogos,partes);
+		else printf("\r lineas leidas: %d		Dialogos sobreescritos: %d",lineas,dialogos);
 	}
 	printf("\n\n Listo, los dialogos han sido escritos y puestos en el archivo resultado.txt\n Hasta la proxima :3");
 	system("pause");

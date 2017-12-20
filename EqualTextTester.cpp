@@ -32,6 +32,7 @@ int main(){
 	//frases.open("frases.txt",ios::out);
 	vector<ss> palabras;
 	palabras.assign(archivos,ss());
+	int lineas = 0;
 	
 	for(int a = 0; a < archivos; a++){
 		sprintf(name,"%s%d.txt",nombre,a+1);
@@ -46,6 +47,8 @@ int main(){
 			if(palabra != 0)palabras[a].second = past;
 			past = st;
 			palabra++;
+			lineas++;
+			printf("\r Lineas leidas: %d",lineas);
 		}
 		//frases << palabras[a].first << endl << palabras[a].second << endl << endl;
 		archivo.close();

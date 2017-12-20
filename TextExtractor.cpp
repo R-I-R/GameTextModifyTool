@@ -79,9 +79,9 @@ int main(){
 		lineas++;
 		
 		if(dividir){
-			printf("\r lineas leidas: %d	Dialogos encontrados: %d			Partes creadas: %d",lineas,dialogos,partes);
+			printf("\r lineas leidas: %d		Dialogos encontrados: %d			Partes creadas: %d",lineas,dialogos,partes);
 		}else{
-			printf("\r lineas leidas: %d	Dialogos encontrados: %d",lineas,dialogos);
+			printf("\r lineas leidas: %d		Dialogos encontrados: %d",lineas,dialogos);
 		}
 		
 	}
