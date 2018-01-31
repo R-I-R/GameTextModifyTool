@@ -57,9 +57,11 @@ int main(){
 	for(int a = 0; a < archivos; a++){
 		for(int b = 0; b < archivos; b++){
 			if(b == a)continue;
-			if(!palabras[a].first.compare(palabras[b].first) && !palabras[a].second.compare(palabras[b].second))printf("el archivo %s%d es igual al %s%d\n",nombre,a+1,nombre,b+1);
+			if(!palabras[a].first.compare(palabras[b].first) && !palabras[a].second.compare(palabras[b].second))printf("\nel archivo %s%d es igual al %s%d\n",nombre,a+1,nombre,b+1);
 		}
 	}
+	getchar();
 	system("pause");
+	cin.get();
 	return 0;
 }

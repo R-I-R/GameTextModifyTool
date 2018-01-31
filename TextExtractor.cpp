@@ -49,7 +49,8 @@ int main(){
 		
 	printf("Bien, Empecemos.\n\n");
 	
-	freopen("0.txt","r",stdin);
+	//freopen("0.txt","r",stdin);
+	ifstream entrada("0.txt",ios::in);
 	
 	string s;
 	int lineas = 0, dialogos = 0,partes = 1,cont = 0;
@@ -62,7 +63,7 @@ int main(){
 		archivo.open("dialogos.txt",ios::out);
 	}
 	
-	while(getline(cin,s)){
+	while(getline(entrada,s)){
 		if(cont == lineasdiv && dividir){
 			partes++;
 			sprintf(ar,"dialogos%d.txt",partes);
@@ -86,6 +87,10 @@ int main(){
 		
 	}
 	printf("\n\n Listo, los dialogos han sido extraidos y puestos en el archivo dialogos.txt\n Hasta la proxima :3");
+	getchar();
+	archivo.close();
+	entrada.close();
 	system("pause");
+	cin.get();
 	return 0;
 }
